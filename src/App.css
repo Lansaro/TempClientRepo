@@ -1,0 +1,329 @@
+* {
+  font-family: Helvetica;
+}
+
+.App-logo {
+  height: 6.5vmin;
+  pointer-events: none;
+  margin: 10px;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.App-header>div>h1 {
+  margin: 10px;
+  font-weight: bolder;
+}
+
+.App-header>div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App-header>div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.Navigation {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.Navigation>* {
+  margin-left: 10px;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.Main {
+  width: 100%;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Preview {
+  min-width: 100%;
+  min-height: 1000px;
+  background-color: rgba(7, 7, 17, 255);
+  color: white;
+}
+
+.Preview>* {
+  margin: 20px auto;
+  min-width: 500px;
+  min-height: 400px;
+  font-size: larger;
+}
+
+.Preview>table>tbody>tr>td {
+  border: 1px solid white;
+}
+
+.Tables {
+  width: 20%;
+  min-height: 1000px;
+  background-color: rgba(23, 23, 33, 255);
+  color: white;
+}
+
+.Tables>div>form>* {
+  margin: 10px;
+}
+
+input[type='file'] {
+  color: rgba(0, 0, 0, 0)
+}
+
+.TableRecord {
+  width: 100%;
+  height: 55px;
+  margin: 10px auto;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgba(29, 29, 41, 255);
+  display: flex;
+  align-items: center;
+}
+
+.Records>div {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.Record {
+  color: white;
+  font-size: 1.2em;
+  margin-left: 15px;
+}
+
+.Graphs {
+  width: 80%;
+  min-height: 1000px;
+  background-color: rgba(7, 7, 17, 255);
+}
+
+.LoginRegister {
+  width: 100%;
+  min-height: 1000px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./components/data-analytics.png');
+}
+
+.LoginRegister>div {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.LoginRegister>div>div {
+  height: 100%;
+  width: 48%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.LoginRegister>div>div>* {
+  margin: 20px;
+}
+
+.LoginRegister>div>div>form>* {
+  margin-top: 20px;
+}
+
+.LoginRegister>div>div>form>div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Chat {
+  width: 20%;
+  min-height: 1000px;
+  background-color: rgba(17, 17, 29, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Chat>* {
+  color: white;
+  font-size: 1.75em;
+  margin: 10px;
+}
+
+.Graph {
+  width: 85%;
+  max-width: 1000px;
+  height: 650px;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+  background-color: rgba(29, 29, 41, 255);
+}
+
+.Graph>div:first-child {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  margin: 20px 0px 0px 70px;
+  font-weight: bold;
+}
+
+.Graph>div:first-child>form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.Graph>div:first-child>select {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.Graph>div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px 0px 0px 70px;
+  font-weight: bold;
+}
+
+.Graph>div:nth-child(2)>select {
+  width: 150px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.Visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 75%;
+  margin: 0px auto;
+}
+
+.Visual>h4 {
+  margin: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.Delete {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 2em;
+  position: absolute;
+  right: 10px;
+  top: -2px;
+  color: white;
+}
+
+.GraphType {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -300px;
+  top: 300px;
+  color: rgba(195, 195, 196, 255);
+  background-color: rgba(43, 43, 55, 255);
+  border-radius: 10px 10px 0px 0px;
+  width: 650px;
+  height: 50px;
+}
+
+.Title {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Color {
+  color: white;
+  text-align: center;
+}
+
+.Buttons {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./components/backgroundImage1.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+}
+
+.Buttons>form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.Buttons>form>* {
+  margin: 0px auto;
+}
+
+.Buttons>form>select {
+  width: 250px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.Buttons>form>button {
+  width: 150px;
+  height: 35px;
+  font-weight: bold;
+}
